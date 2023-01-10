@@ -1,11 +1,9 @@
 # Bot_Tutorial
 Proyecto del bot que ando haciendo en mi canal de yt
 
-# Packeages Usados
-> discord.js
-> colors
-> fs
-> path
+**Packeages Usados**
 
-
-![enter image description here](https://discord.gg/93ZT37Rx5X)
+ - [ ] discord.js
+ - [ ] fs
+ - [ ] colors
+ - [ ] fs
