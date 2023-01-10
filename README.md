@@ -6,3 +6,6 @@ Proyecto del bot que ando haciendo en mi canal de yt
 > colors
 > fs
 > path
+
+
+![enter image description here](https://discord.gg/93ZT37Rx5X)
