@@ -1,9 +1,12 @@
 # Bot_Tutorial
-Proyecto del bot que ando haciendo en mi canal de yt
+Proyecto de un bot  en contruccion, que se anda haciendo a base que continua los videos de mi [canal](https://www.youtube.com/@elalda/videos)
 
-**Packeages Usados**
+**Package Usados:**
 
- - [ ] discord.js
- - [ ] fs
- - [ ] colors
- - [ ] fs
+Puedes instalar estos packages en tu editor usando `npm install <package>` sin los <> | Ejemplo `npm install discord.js`.
+
+ - discord.js
+ - fs
+ - colors
+ - path
+
