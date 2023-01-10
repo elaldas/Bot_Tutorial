@@ -10,4 +10,3 @@ Ejemplo `npm install discord.js`.
  - fs
  - colors
  - path
-
