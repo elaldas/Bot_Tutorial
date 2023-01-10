@@ -48,7 +48,7 @@ client.on("guildMemberAdd", (member) => {
 	.setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
 	.setTimestamp()
 
-	client.channels.cache.get("1045527572122976296").send({ embeds: [embed] })
+	client.channels.cache.get("ID-CANAL").send({ embeds: [embed] })
 });
 ////////////////////Adios
 client.on("guildMemberRemove", (member) => {
@@ -59,7 +59,7 @@ client.on("guildMemberRemove", (member) => {
 	.setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
 	.setTimestamp()
 
-	client.channels.cache.get("1045527572122976296").send({ embeds: [embed] })
+	client.channels.cache.get("ID-CANAL").send({ embeds: [embed] })
 });
 ////////////////////guildCreate
 client.on("guildCreate", async (guild) => {
@@ -76,7 +76,7 @@ client.on("guildCreate", async (guild) => {
 	.setThumbnail(guild.iconURL())
 	.setTimestamp()
 
-	client.channels.cache.get("1046234337013678091").send({ embeds: [agregado] })
+	client.channels.cache.get("ID-CANAL").send({ embeds: [agregado] })
 });
 /////////////////guildDelete
 client.on("guildDelete", async (guild) => {
@@ -93,7 +93,7 @@ client.on("guildDelete", async (guild) => {
 	.setThumbnail(guild.iconURL())
 	.setTimestamp()
 
-	client.channels.cache.get("1046234337013678091").send({ embeds: [agregado] })
+	client.channels.cache.get("ID-CANAL").send({ embeds: [agregado] })
 });
 /////////////////messageCreate
 let prefix = config.prefix;
