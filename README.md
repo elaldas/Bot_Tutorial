@@ -10,11 +10,4 @@ Puedes instalar estos packages en tu editor usando `npm install <package>` sin l
  - colors
  - path
 
-
-
-
 [Para ayuda o soporte, dale a este link](https://discord.gg/93ZT37Rx5X)
-
-
-    ---------------------------------------------------------------
-
