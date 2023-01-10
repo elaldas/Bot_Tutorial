@@ -11,9 +11,10 @@ Puedes instalar estos packages en tu editor usando `npm install <package>` sin l
  - path
 
 
-https://discord.gg/93ZT37Rx5X
 
-![enter image description here](https://discord.gg/93ZT37Rx5X)
 
-[enter link description here](https://discord.gg/93ZT37Rx5X)
+[Para ayuda o soporte, dale a este link](https://discord.gg/93ZT37Rx5X)
+
+
+    ---------------------------------------------------------------
 
