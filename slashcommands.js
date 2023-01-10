@@ -13,11 +13,11 @@ fs.readdirSync("./slashcommands").forEach(async(categorys) => {
 	}
 })
 
-const rest = new REST({ version: "10" }).setToken("MTA0MzY3NzUzMzIzMDYxNjU3OA.GXL7Bg.vB1ZcsDJypf423_JbTVtbLRrOLvDcl4dwQbmpM")
+const rest = new REST({ version: "10" }).setToken("TOKEN-BOT")
 async function creareSlash(){
 	try{
 		await rest.put(
-			Routes.applicationCommands("1043677533230616578"), {
+			Routes.applicationCommands("ID-BOT"), {
 				body: commands
 			})
 	} catch(error) {
