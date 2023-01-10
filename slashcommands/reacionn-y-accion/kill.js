@@ -2,9 +2,9 @@ const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 
 module.exports = {
 	data: new SlashCommandBuilder()
-	.setName("kill")
-	.setDescription("Mataste a un usuario")
-	.addUserOption(x => x.setName("usuario").setDescription("Menciona a un usuario a matar").setRequired(true)),
+	.setName("kill")//Nombre del comando
+	.setDescription("Mataste a un usuario")//Descripcion del comando
+	.addUserOption(x => x.setName("usuario").setDescription("Menciona a un usuario a matar").setRequired(true)),//Opcion del usuario
 
 	async run(client, interaction) {
 
