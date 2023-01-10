@@ -2,9 +2,9 @@ const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 
 module.exports = {
 	data: new SlashCommandBuilder()
-	.setName("punsh")
-	.setDescription("Golpeaste a un usuario")
-	.addUserOption(x => x.setName("usuario").setDescription("Menciona a un usuario a golpear").setRequired(true)),
+	.setName("punsh")//Nombre del comando
+	.setDescription("Golpeaste a un usuario")//Descripcion del comando
+	.addUserOption(x => x.setName("usuario").setDescription("Menciona a un usuario a golpear").setRequired(true)),//Opcion del usuario
 
 	async run(client, interaction) {
 
