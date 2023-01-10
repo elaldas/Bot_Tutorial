@@ -3,7 +3,8 @@ Proyecto de un bot  en contruccion, que se anda haciendo a base que continua los
 
 **Package Usados:**
 
-Puedes instalar estos packages en tu editor usando `npm install <package>` sin los <> | Ejemplo `npm install discord.js`.
+Puedes instalar estos packages en tu editor usando `npm install <package>` sin los <>
+Ejemplo `npm install discord.js`.
 
  - discord.js
  - fs
