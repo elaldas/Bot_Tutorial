@@ -4,7 +4,6 @@ const fs = require("fs");
 const { Client, GatewayIntentBits, Partials, ActivityType, EmbedBuilder } = require("discord.js");
 const client = new Client ({ intents: 3276799 });
 const config = require("./config.json");
-const mongoose = require("mongoose");
 
 client.on("ready", async () => {
 
