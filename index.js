@@ -5,6 +5,7 @@ const { Client, GatewayIntentBits, Partials, ActivityType, EmbedBuilder } = requ
 const client = new Client ({ intents: 3276799 });
 const config = require("./config.json");
 
+// Presencia del bot
 client.on("ready", async () => {
 
 	const time = (200*5);
@@ -34,7 +35,7 @@ client.on("ready", async () => {
 	console.log(`Conectado como ${client.user.username}`.green)
 
 });
-////////////////////Hola
+// Bienvenidas
 client.on("guildMemberAdd", (member) => {
 
 	const embed = new EmbedBuilder()
@@ -49,7 +50,7 @@ client.on("guildMemberAdd", (member) => {
 
 	client.channels.cache.get("ID-CANAL").send({ embeds: [embed] })
 });
-////////////////////Adios
+// Despedidas
 client.on("guildMemberRemove", (member) => {
 
 	const embed = new EmbedBuilder()
@@ -60,7 +61,8 @@ client.on("guildMemberRemove", (member) => {
 
 	client.channels.cache.get("ID-CANAL").send({ embeds: [embed] })
 });
-////////////////////guildCreate
+
+// Entre a un servidor
 client.on("guildCreate", async (guild) => {
 
 	const agregado = new EmbedBuilder()
@@ -77,7 +79,8 @@ client.on("guildCreate", async (guild) => {
 
 	client.channels.cache.get("ID-CANAL").send({ embeds: [agregado] })
 });
-/////////////////guildDelete
+
+// Sali a un servidor
 client.on("guildDelete", async (guild) => {
 
 	const agregado = new EmbedBuilder()
@@ -94,7 +97,8 @@ client.on("guildDelete", async (guild) => {
 
 	client.channels.cache.get("ID-CANAL").send({ embeds: [agregado] })
 });
-/////////////////messageCreate
+
+// Comando Prefijo
 let prefix = config.prefix;
 
 client.on("messageCreate", async (message) => {
@@ -112,7 +116,8 @@ client.on("messageCreate", async (message) => {
 		message.channel.send({ embeds: [embed] })//respuesta del comando
 	}
 })
-///////////////////SlashComands
+
+// SlashCommands
 client.slashcommand = new Discord.Collection()
 
 fs.readdirSync("./slashcommands").forEach(async(categorys) => {
@@ -131,9 +136,9 @@ client.on("interactionCreate", async(interaction) => {
 		if(!cmd) return;
 		await cmd.run(client, interaction)
 	}
-});
-//////////////////////////////////tickets
+})
 
+// Tickets
 client.on("interactionCreate", async (interaction) => {
 	if(interaction.isButton()) {
 		if(interaction.customId === "crear") {
@@ -187,5 +192,12 @@ client.on("interactionCreate", async (interaction) => {
 	}
 })
 
-////////////////////////////////////
+// TOKEN
 client.login(config.token);
+
+/*
+╔═══════════════════════════════════════════════════╗
+║    || - ||     Código por ALDA#8939     || - ||   ║
+║     --|   https://discord.gg/93ZT37Rx5X    |--    ║
+╚═══════════════════════════════════════════════════╝
+*/
